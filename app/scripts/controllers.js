@@ -30,7 +30,11 @@ angular.module('confusionApp')
             $scope.showDetails = !$scope.showDetails;
         };
     }])
-    
+   .controller('DishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
+   var dish=menuFactory.getDish(3);
+   $scope.dish=dish;
+
+}])
      .controller('ContactController', ['$scope', function($scope) {
 
          $scope.feedback = { mychannel: "", firstName: "", lastName: "", agree: false, email: "" };

@@ -169,7 +169,7 @@ angular.module('confusionApp')
                         return dishes;
                     };
 
-                    menufac.getDishe=function(index){
+                    menufac.getDish=function(index){
                         return dishes[index];
                     };
                     return menufac;
